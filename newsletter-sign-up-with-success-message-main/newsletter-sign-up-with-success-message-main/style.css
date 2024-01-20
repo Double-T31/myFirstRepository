@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+    min-height: 100vh;
+    position: relative;
+    font-weight: 600;
+}
+.news-form{
+    position: absolute;
+    width: 780px;
+    height: 550px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    padding: 20px;
+    
+}
+.form{
+    width: 350px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+.image{
+    background: url(assets/images/illustration-sign-up-desktop.svg);
+    width: 350px;
+    height: 100%;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.form p{
+    font-size: 14px;
+}
+.list{
+    display: flex;
+}
+img{
+    padding-right: 15px;
+}
+
+.alert{
+    margin: 0 0 0 26%;
+    padding: 0;
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+#email{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid ;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+#email:focus{
+    border: 1px solid black;
+    background-color: white;
+}
+.submit{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: hsl(235, 18%, 26%);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+.submit:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 5px 10px hsl(4, 100%, 67%);
+    transition: 0.2s;
+}
+.success{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 40px;
+}
+.success h1{
+    font-size: 2.5rem;
+}
+.valid{
+    height: 70px;
+    padding-bottom: 20px;
+}
+.message{
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+}
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 5px 10px hsl(4, 100%, 67%);
+}
+
+
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: white;
+    }
+    .news-form{
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: auto;
+        height: 100%;
+        color: black;
+    }
+    .form{
+        position: absolute;
+        top: 35%;
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+    }
+    .form h1{
+        font-size: 2.5rem;
+    }
+    .form p{
+        font-size: 17px;
+    }
+    .image{
+        background: url(assets/images/illustration-sign-up-mobile.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 0;
+        height: 300px;
+    }
+    #email, .submit{
+        height: 60px;
+    }
+    label{
+        margin-top: 20px;
+    }
+    img{
+        height: 20px;
+    }
+    .success{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+    }
+    .message{
+        font-size: 17px;
+    }
+    .valid{
+        margin-top: 30%;
+        height: 100px;
+    }
+    .thanks{
+        margin-top: 10%;
+        font-size: 3rem;
+    }
+    .dismiss{
+        margin-top: 75%;
+    }
+}
